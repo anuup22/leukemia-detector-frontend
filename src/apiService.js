@@ -1,6 +1,4 @@
-// src/apiService.js
 import axios from "axios";
-
 const baseApiUrl = "http://localhost:5000/api";
 
 export const getModels = async () => {
