@@ -112,7 +112,7 @@ const PredictionPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-100 py-20">
       <div className="container mx-auto px-6 max-w-4xl">
-        <h1 className="text-4xl font-bold text-blue-900 text-center mb-12">
+        <h1 className="text-4xl font-bold text-blue-900 text-center mt-5 mb-12">
           Leukemia Detection
         </h1>
 

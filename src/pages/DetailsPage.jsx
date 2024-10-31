@@ -19,7 +19,7 @@ export const DetailsPage = () => {
         <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-purple-100 py-20">
             <div className="container mx-auto px-6">
                 <div className="max-w-4xl mx-auto">
-                    <h1 className="text-5xl font-bold text-indigo-900 text-center mb-12">
+                    <h1 className="text-5xl font-bold text-indigo-900 text-center mt-5 mb-12">
                         About LeukAI Detection
                     </h1>
 

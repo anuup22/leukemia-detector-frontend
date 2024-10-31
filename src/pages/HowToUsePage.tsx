@@ -40,7 +40,7 @@ export default function HowToUsePage() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-100 py-20">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <h1 className="text-5xl font-bold text-blue-900 mb-6">
+          <h1 className="text-5xl font-bold text-blue-900 mt-5 mb-6">
             How to Use LeukAI
           </h1>
           <p className="text-xl text-gray-700">

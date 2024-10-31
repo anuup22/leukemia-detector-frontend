@@ -49,7 +49,7 @@ export const SupportPage = () => {
         <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
             <div className="container mx-auto px-6">
                 <div className="max-w-4xl mx-auto">
-                    <h1 className="text-5xl font-bold text-blue-900 text-center mb-12">
+                    <h1 className="text-5xl font-bold text-blue-900 text-center mt-5 mb-12">
                         Support & Contact
                     </h1>
 
