@@ -8,7 +8,7 @@ import {
   HelpCircle, 
   Shield, 
   Activity, 
-  Heart 
+  Circle 
 } from 'lucide-react';
 
 const Navbar = () => {
@@ -27,12 +27,12 @@ const Navbar = () => {
       path: '/upload',
       description: 'Start leukemia image analysis'
     },
-    { 
-      icon: Database, 
-      title: 'Models', 
-      path: '/models',
-      description: 'Explore AI detection models'
-    },
+    // { 
+    //   icon: Database, 
+    //   title: 'Models', 
+    //   path: '/models',
+    //   description: 'Explore AI detection models'
+    // },
     { 
       icon: Shield, 
       title: 'How It Works', 
@@ -40,7 +40,7 @@ const Navbar = () => {
       description: 'Learn about our technology'
     },
     { 
-      icon: Heart, 
+      icon: Circle, 
       title: 'About', 
       path: '/details',
       description: 'Our mission and impact'
@@ -58,14 +58,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-blue-900 to-indigo-900 shadow-lg">
+    <nav className="fixed top-5 left-20 right-20 rounded-full z-50 bg-gradient-to-r from-blue-900 via-purple-900 to-indigo-900 shadow-lg">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo Section */}
         <Link 
           to="/" 
           className="flex items-center space-x-3 text-white hover:text-blue-200 transition-colors"
         >
-          <Heart className="text-blue-300" size={32} />
+          <Circle className="text-blue-300" size={32} />
           <span className="text-2xl font-bold tracking-wider">
             LeukAI
           </span>

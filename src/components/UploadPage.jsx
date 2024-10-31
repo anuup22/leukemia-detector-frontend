@@ -98,8 +98,8 @@ const PredictionPage = () => {
 
   // Result interpretation
   const interpretResult = (confidence) => {
-    if (confidence > 0.8) return 'High Risk';
-    if (confidence > 0.5) return 'Moderate Risk';
+    if (confidence > 80) return 'High Risk';
+    if (confidence > 50) return 'Moderate Risk';
     return 'Low Risk';
   };
 
@@ -236,18 +236,24 @@ const PredictionPage = () => {
                     </h3>
                   </div>
                   <div className="flex items-center">
-                    {result.detected ? (
+                    {result.confidence > 5 ? (
                       <AlertTriangle className="text-red-500 mr-2" />
                     ) : (
                       <CheckCircle2 className="text-green-500 mr-2" />
                     )}
                     <span className="font-bold">
-                      {result.detected ? 'Leukemia Detected' : 'No Leukemia'}
+                      {result.confidence > 5 ? 'Leukemia Detected' : 'No Leukemia'}
                     </span>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <p className="text-gray-700">Result:</p>
+                    <p className="font-bold">
+                      {result.diagnosis}
+                    </p>
+                  </div>
                   <div>
                     <p className="text-gray-700">Risk Assessment:</p>
                     <p className="font-bold">
@@ -257,7 +263,7 @@ const PredictionPage = () => {
                   <div>
                     <p className="text-gray-700">Confidence:</p>
                     <p className="font-bold">
-                      {(result.confidence * 100).toFixed(2)}%
+                      {(result.confidence).toFixed(2)}%
                     </p>
                   </div>
                 </div>
