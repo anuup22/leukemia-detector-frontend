@@ -236,18 +236,18 @@ const PredictionPage = () => {
                     </h3>
                   </div>
                   <div className="flex items-center">
-                    {result.confidence > 5 ? (
+                    {result.confidence > 10 ? (
                       <AlertTriangle className="text-red-500 mr-2" />
                     ) : (
                       <CheckCircle2 className="text-green-500 mr-2" />
                     )}
                     <span className="font-bold">
-                      {result.confidence > 5 ? 'Leukemia Detected' : 'No Leukemia'}
+                      {result.confidence > 10 ? 'Leukemia Detected' : 'No Leukemia'}
                     </span>
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-3 gap-4">
                   <div>
                     <p className="text-gray-700">Result:</p>
                     <p className="font-bold">
